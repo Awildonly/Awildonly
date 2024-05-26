@@ -93,22 +93,11 @@
       
         <p>ORB-SLAM2 是用于单目、立体和 RGB-D 相机的实时 SLAM 库，用于计算相机轨迹和稀疏 3D 重建（在具有真实比例的立体和 RGB-D 情况下）。它能够检测循环并实时重新定位相机。我们提供了在 KITTI 数据集中以立体或单目运行 SLAM 系统的示例，在 TUM 数据集中以 RGB-D 或单目运行，在 EuRoC 数据集中以立体或单目运行 SLAM 系统。我们还提供 ROS 节点来处理实时单目、立体声或 RGB-D 流。该库可以在没有ROS的情况下进行编译(引自<a target="_blank" rel="noopener" href="https://github.com/raulmur/ORB_SLAM2">ORB-SLAM2</a>)</p>
 <h1 id="安装环境："><a href="#安装环境：" class="headerlink" title="安装环境："></a>安装环境：</h1><p>ubuntu 18.04 LTS</p>
-<h1 id="依赖："><a href="#依赖：" class="headerlink" title="依赖："></a>依赖：</h1><h2 id="C-11"><a href="#C-11" class="headerlink" title="C++11"></a>C++11</h2><p>一般ubuntu 环境创建好后默认是存在的，验证命令</p>
-<blockquote>
-<p>gcc -v</p>
-</blockquote>
+<h1 id="依赖："><a href="#依赖：" class="headerlink" title="依赖："></a>依赖：</h1><h2 id="C-11"><a href="#C-11" class="headerlink" title="C++11"></a>C++11</h2><p>一般ubuntu 环境创建好后默认是存在的，验证命令<br><code>gcc -v</code></p>
 <h2 id="Pangolin"><a href="#Pangolin" class="headerlink" title="Pangolin"></a>Pangolin</h2><p>官网<a target="_blank" rel="noopener" href="https://github.com/stevenlovegrove/Pangolin">Plangolin</a>，ORB-SLAM2要求的版本为 v0.5</p>
-<h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><blockquote>
-<p>git clone –recursive <a target="_blank" rel="noopener" href="https://github.com/stevenlovegrove/Pangolin.git">https://github.com/stevenlovegrove/Pangolin.git</a><br>cd Pangolin</p>
-</blockquote>
-<h3 id="切换版本"><a href="#切换版本" class="headerlink" title="切换版本"></a>切换版本</h3><p>检查是否有 v0.5 这个标签</p>
-<blockquote>
-<p>git tag<br>如果存在 v0.5 这个标签，可以直接切换到该版本<br>git checkout v0.5</p>
-</blockquote>
-<p>或者可以直接创建一个新分支，并切换到 v0.5 版本</p>
-<blockquote>
-<p>git checkout -b new_branch_name v0.5 </p>
-</blockquote>
+<h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><p><code>git clone --recursive https://github.com/stevenlovegrove/Pangolin.git</code><br><code>cd Pangolin</code></p>
+<h3 id="切换版本"><a href="#切换版本" class="headerlink" title="切换版本"></a>切换版本</h3><p>检查是否有 <code>v0.5</code> 这个标签<br><code>git tag</code><br>如果存在 <code>v0.5</code>这个标签，可以直接切换到该版本<br><code>git checkout v0.5</code></p>
+<p>或者可以直接创建一个新分支，并切换到 v0.5 版本<br><code>git checkout -b new_branch_name v0.5</code></p>
 <h3 id="依赖"><a href="#依赖" class="headerlink" title="依赖"></a>依赖</h3><blockquote>
 <p>sudo apt install libgl1-mesa-dev<br>sudo apt install libglew-dev<br>sudo apt install cmake<br>sudo apt install libpython2.7-dev<br>sudo apt install pkg-config<br>sudo apt install libegl1-mesa-dev libwayland-dev libxkbcommon-dev wayland-protocols<br>sudo apt install ffmpeg libavcodec-dev libavutil-dev libavformat-dev libswscale-dev libavdevice-dev<br>sudo apt install libdc1394-22-dev libraw1394-dev<br>sudo apt install libjpeg-dev libpng-dev libtiff5-dev libopenexr-dev</p>
 </blockquote>
