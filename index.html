@@ -151,7 +151,7 @@
 
 <h2 id="5-Opencv定义更换"><a href="#5-Opencv定义更换" class="headerlink" title="5. Opencv定义更换"></a>5. Opencv定义更换</h2><p><code>error:&#39;CV_LOAD_IMAGE_UNCHANGED&#39; was not declared in this scope</code></p>
 <p>报错的文件包括：<code>mono_euroc.cc、mono_kitti.cc、mono_tum.cc、rgbd_tum.cc、stereo_euroc.cc、stereo_kitti.cc</code></p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">将</span><br><span class="line">CV_LOAD_IMAGE_UNCHANGED</span><br><span class="line">替换为</span><br><span class="line">cv::IMREAD_UNCHANGED</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">将</span><br><span class="line">CV_LOAD_IMAGE_UNCHANGED</span><br><span class="line">替换为</span><br><span class="line">cv::IMREAD_UNCHANGED</span><br></pre></td></tr></table></figure>
 
 
 
